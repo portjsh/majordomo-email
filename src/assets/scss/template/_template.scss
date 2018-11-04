@@ -6,8 +6,21 @@ body,
 html, 
 .body {
   background: #f3f3f3 !important;
-}
 
+}
+.gray {
+  background: #f1f7f5;
+}
+.yellow {
+  color: #f1a228;
+}
+.bg-yellow {
+  background-color: #f1a228;
+  color: #fff;
+}
+.container {
+  border: 1px solid #033053;
+}
 .container.header {
   background: #f3f3f3;
 }
@@ -19,6 +32,7 @@ html,
 // Full Width Headers
 .header {
   background: #8a8a8a;
+  border-bottom: 1px solid #033053;
 }
 
 .header .columns {
@@ -56,4 +70,11 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+.footer{
+  p{
+    &.text-center{
+  font-size: 12px;
+}
+  }
 }
