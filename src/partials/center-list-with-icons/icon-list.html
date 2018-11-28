@@ -1,0 +1,67 @@
+<row class="gray">
+    <columns>
+      <spacer size="32"></spacer>
+      <h4 class="text-center">Make your house <span class="yellow">the best home!</span></h4>
+      <spacer size="32"></spacer>
+      <table cellspacing="0" cellpadding="0" align="center" width="100%" style="width: 100%;">
+      <tr>
+          <td width="10%">&nbsp;</td>
+        <td align="center">
+           {{#each icon-list}}
+          <table cellspacing="0" cellpadding="0" align="center" style="max-width:245px;" class="hide-for-large float-center">
+            <tr>
+              <td width="46" style="text-align: left; max-width: 46px;">
+                  <img src="{{image}}" class="horizontal-list" style="display: inline" alt="{{image-alt}}">
+              </td>
+              <td width="15"></td>
+              <td class="vert-middle" style="vertical-align: middle;">
+                 <p class="copy {{heading-color}}"><strong>{{{heading}}}</strong></p>
+                <p class="copy {{copy-color}}">{{{copy}}}</p>
+              </td>
+            </tr>
+          </table>
+          {{#unless @last}}
+          <spacer size="30" class="hide-for-large"></spacer>{{/unless}} {{/each}}
+        </td>
+        <td width="10%">&nbsp;</td>
+      </tr>
+    </table>
+
+<table align="center" >
+  <tbody>
+    <tr>
+      <td>
+        <table class="row">
+          <tbody>
+            <tr>
+              <th class="small-12 large-12 columns first last">
+                <table>
+                  <tr>
+                    <th>
+                      <center data-parsed="">
+                        <table class="button secondary float-center">
+                          <tr>
+                            <td>
+                              <table>
+                                <tr>
+                                  <td><a href="{{{button-link}}}">{{{button-text}}}</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </center>
+                    </th>
+                    <th class="expander"></th>
+                  </tr>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </columns>
+  </row>
