@@ -8,7 +8,7 @@
           <td width="10%">&nbsp;</td>
         <td align="center">
            {{#each icon-list}}
-          <table cellspacing="0" cellpadding="0" align="center" style="max-width:245px;" class="hide-for-large float-center">
+          <table cellspacing="0" cellpadding="0" align="center" style="max-width:245px;" class="float-center">
             <tr>
               <td width="46" style="text-align: left; max-width: 46px;">
                   <img src="{{image}}" class="horizontal-list" style="display: inline" alt="{{image-alt}}">
@@ -20,8 +20,8 @@
               </td>
             </tr>
           </table>
-          {{#unless @last}}
-          <spacer size="30" class="hide-for-large"></spacer>{{/unless}} {{/each}}
+          
+          <spacer size="30" ></spacer>{{/each}}
         </td>
         <td width="10%">&nbsp;</td>
       </tr>
